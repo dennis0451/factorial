@@ -1,8 +1,8 @@
 exports.factorial = function(num) {
-    let factorial = 1
-    for(let i = num; i > 0; i--){
-        factorial *= i
+    if(num ==1){
+        return 1
+    }else{
+        return num * exports.factorial(num-1)
     }
-    return factorial
      
 };
